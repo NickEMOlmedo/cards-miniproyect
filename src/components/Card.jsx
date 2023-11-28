@@ -4,7 +4,7 @@ import "./Card.css";
 
 const Card = ({ lang, img, fcolor, scolor }) => {
   return (
-    <div className="card" style={{background: "red"}}>
+    <div className="card" style={{background: `linear-gradiente(to left, ${fcolor}, ${scolor})`}}>
       <img src={img} alt="Lang.svg" />
       <h3>{lang}</h3>
     </div>
@@ -12,7 +12,7 @@ const Card = ({ lang, img, fcolor, scolor }) => {
 };
 
 Card.PropTypes = {
-  lang: PropTypes.string,
+  lang: PropTypes.string;
   img: PropTypes.string,
   fcolor: PropTypes.string,
   scolor: PropTypes.string,
