@@ -6,7 +6,7 @@ const Card = ({ lang, img, fcolor, scolor }) => {
   return (
     <div
       className="card"
-      style={{ background: `linear-gradiente(to left, ${fcolor}, ${scolor})`}}
+      style={{ background: `linear-gradient(to left, ${fcolor}, ${scolor})` }}
     >
       <img src={img} alt="Lang.svg" />
       <h3>{lang}</h3>
@@ -21,4 +21,4 @@ Card.propTypes = {
   scolor: PropTypes.string,
 };
 
-export default Card;  
+export default Card;
