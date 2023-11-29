@@ -4,18 +4,21 @@ import "./Card.css";
 
 const Card = ({ lang, img, fcolor, scolor }) => {
   return (
-    <div className="card" style={{background: `linear-gradiente(to left, ${fcolor}, ${scolor})`}}>
+    <div
+      className="card"
+      style={{ background: `linear-gradiente(to left, ${fcolor}, ${scolor})`}}
+    >
       <img src={img} alt="Lang.svg" />
       <h3>{lang}</h3>
     </div>
   );
 };
 
-Card.PropTypes = {
-  lang: PropTypes.string;
+Card.propTypes = {
+  lang: PropTypes.string,
   img: PropTypes.string,
   fcolor: PropTypes.string,
   scolor: PropTypes.string,
 };
 
-export default Card;
+export default Card;  
